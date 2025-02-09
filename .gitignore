@@ -6,18 +6,78 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
+.pnpm-debug.log*
 
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Directory for instrumented libs
+lib-cov
+coverage
+*.lcov
+.nyc_output
+
+# Dependency directories
 node_modules
+node_modules/
+jspm_packages/
+bower_components
+web_modules/
+
+# Build outputs
 dist
 dist-ssr
+build/Release
+.next
+out
+.nuxt
+.vuepress/dist
+.docusaurus
+.serverless/
+
+# Cache directories
+.cache
+.parcel-cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+.temp
+.grunt
+.fusebox/
+.dynamodb/
+
+# Environment and config
 *.local
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+.lock-wscript
+*.tsbuildinfo
 
-# yarn
+# Package managers
 .yarn/
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.yarn-integrity
+.npm
+*.tgz
 
-# Editor directories and files
+# Editor and OS
 .vscode/*
 !.vscode/extensions.json
+.vscode-test
 .idea
 .DS_Store
 *.suo
@@ -25,3 +85,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Optional caches
+.eslintcache
+.stylelintcache
+.node_repl_history
+.tern-port

@@ -1,4 +1,8 @@
-# React + TypeScript + Vite
+# ui-sandbox
+
+A sandbox for testing out UI components in React
+
+## About
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -15,13 +19,13 @@ If you are developing a production application, we recommend updating the config
 
 ```js
 export default tseslint.config({
-  languageOptions: {
+languageOptions: {
     // other options...
     parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
+    project: ['./tsconfig.node.json', './tsconfig.app.json'],
+    tsconfigRootDir: import.meta.dirname,
     },
-  },
+},
 })
 ```
 
@@ -34,17 +38,17 @@ export default tseslint.config({
 import react from 'eslint-plugin-react'
 
 export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
+// Set the react version
+settings: { react: { version: '18.3' } },
+plugins: {
     // Add the react plugin
     react,
-  },
-  rules: {
+},
+rules: {
     // other rules...
     // Enable its recommended rules
     ...react.configs.recommended.rules,
     ...react.configs['jsx-runtime'].rules,
-  },
+},
 })
 ```
